@@ -1,0 +1,3 @@
+[submodule "MyAndroidProjects"]
+	path = MyAndroidProjects
+	url = git@github.com:codergo7/MyAndroidProjects.git
