@@ -4,8 +4,11 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String LOG_TAG =
+            MainActivity.class.getSimpleName();
     public static String oneName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         oneName="biisim";
         intent.putExtra(oneName,"bunu gorecek abdullah abi");
         startActivity(intent);
-
-
+    }
+    public void launchSecondActivity(View view) {
+        Log.d(LOG_TAG, "Button clicked!");
     }
 }
